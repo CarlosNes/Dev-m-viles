@@ -1,6 +1,7 @@
 package com.example.ejercicioactividad
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,9 @@ class PantalladeInicio : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    val txtnombre: TextView=findViewById(R.id.txtnombre)
+    val nombre=intent.getStringExtra("Nombres")
+        txtnombre.text=nombre
+
     }
 }

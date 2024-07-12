@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     val btningresar: Button=findViewById(R.id.btningresar)
         btningresar.setOnClickListener {
             val intent=Intent (this,PantalladeInicio::class.java)
+            intent.putExtra("Nombres", "Carlos")
             startActivity(intent)
             Toast.makeText(this, "Bienvendido", Toast.LENGTH_SHORT).show()
         }
